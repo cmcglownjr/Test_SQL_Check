@@ -1,0 +1,19 @@
+name: SQL Validation
+
+on:
+  pull_request:
+    paths:
+      - "**/*.sql"
+  push:
+    branches: [ main ]
+
+jobs:
+  sql-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate SQL naming rules
+        uses: cmcglownjr/sql-naming-guard@v1
+        with:
+          sql-path: migrations
