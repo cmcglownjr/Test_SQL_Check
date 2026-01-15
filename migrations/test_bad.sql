@@ -1,4 +1,5 @@
 -- Test case for SQL checker
+-- sql-naming-guard:ignore
 
 SELECT *
 FROM database.table
