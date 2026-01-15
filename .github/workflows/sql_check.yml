@@ -17,3 +17,5 @@ jobs:
         uses: cmcglownjr/sql-naming-guard@v2
         with:
           sql-path: migrations
+          strict: "true"
+          changed-only: "true"
