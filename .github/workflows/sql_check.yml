@@ -20,4 +20,4 @@ jobs:
         with:
           sql-path: migrations
           strict: "true"
-          changed-only: "true"
+          changed-only: "false"
